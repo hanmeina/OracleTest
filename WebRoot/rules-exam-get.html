@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/rules-exam.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="header" class="col-xs-12">
+                <h3 class="my-title">
+                <span class="glyphicon glyphicon-list-alt text-primary"></span> 规则审核
+                </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h4>共有<strong>2</strong>条规则待审核。详情如下：</h4>
+            </div>
+        </div>
+        <div class="row rule-block">
+            <div class="col-xs-12">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <td>规则id</td>
+                            <td>规则前件（可信度）（权重）</td>
+                            <td>规则后件（可信度）</td>
+                            <td>规则可信度</td>
+                            <td>创建者</td>
+                            <td>创建时间</td>
+                            <td>审核状态</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                总在同一位置（100）（100）<br>
+                                区域（100）（100）<br>
+                                纵裂纹（100）（100）<br>
+                                较深裂纹（100）（100）<br>
+                            </td>
+                            <td>
+                                结晶器在液面处受损（100）
+                            </td>
+                            <td>100</td>
+                            <td>userName</td>
+                            <td>2015-05-13</td>
+                            <td>待审核</td>
+                            <td><a href="javascript:;" class="btn btn-primary">执行审核</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

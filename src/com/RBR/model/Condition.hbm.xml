@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.Condition" table="rbr_rules_condition" schema="SCOTT">
+	   <id name="id" type="int" column="cid">
+              <generator class="sequence"><param name="sequence">INSERT_CONDITION_SEQUENCE</param></generator>
+        </id>
+       <many-to-one name="metaData" class="com.RBR.model.MetaData" column="condition_metadata_id" lazy="false"></many-to-one>
+		
+		<property name="weight" type="int" column="weight" length="4" not-null="true"/>
+		
+        <many-to-one name="rules" class="com.RBR.model.Rules" column="rules_id" cascade="save-update" not-null="true" lazy="false"></many-to-one>
+    
+    
+    </class>
+    
+</hibernate-mapping>

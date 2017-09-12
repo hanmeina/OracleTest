@@ -1,0 +1,45 @@
+body{
+	font-family: Microsoft YaHei, SimHei, sans-serif;
+}
+table{
+	font-size: 14px;
+}
+table thead {
+	font-weight: 600;
+}
+#header {
+	background-color: #ECF0F1;
+	margin-bottom: 15px;
+
+}
+#header .my-title{
+	margin-top: 10px;
+}
+title{
+	font-size: 16px;
+	font-weight: 500;
+}
+lable{
+	font-size: 16px;
+	font-weight: 600;
+}
+#a{
+	font-size: 14px;
+}
+
+modal-backdrop {
+	background-color: #E6E6FA;
+}
+
+.modal-backdrop.in {
+	filter: alpha(opacity =                       50);
+	opacity: .5;
+}
+
+.glyphicon-warning-sign {
+	color: #d9534f;
+}
+
+.glyphicon-ok {
+	color: #468847;
+}

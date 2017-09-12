@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.Log" table="LOG" schema="SCOTT">
+        <id name="id" type="java.lang.Integer" column="LOGID">
+             <generator class="sequence"><param name="sequence">insert_log_sequence</param></generator>
+        </id>
+        
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" length="20" />
+        </property>
+        <property name="operateTime" type="java.util.Date">
+        	<column name="OPERATETIME"></column>
+        </property>
+        <property name="content" type="java.lang.String">
+        	<column name="CONTENT"></column>
+        </property>
+        <property name="authorityId" type="java.lang.Integer">
+        	<column name="AUTHORITYID"></column>
+        </property>
+          <many-to-one name="subSystem" class="com.RBR.model.Dimension" column="SUBSYSTEMID" lazy="false"/>
+          <many-to-one name="operate" class="com.RBR.model.Dimension" column="OPERATEID" lazy="false"/>
+          <many-to-one name="operateSubject" class="com.RBR.model.Dimension" column="OPERATESUBJECTID" lazy="false"/>
+       <!--    <many-to-one name="authority" class="com.wx.model.WxAuthority" column="WXAUTHORITYID" lazy="false"/> -->
+      <!--   <set name="subSystem" inverse="true" lazy="false">
+            <key>
+                <column name="SUBSYSTEMID" precision="32" scale="0" />
+            </key>
+            <one-to-many class="com.RBR.model.Dimension" />
+        </set>
+        <set name="operate" inverse="true" lazy="false">
+            <key>
+                <column name="OPERATEID" precision="8" scale="0" />
+            </key>
+            <one-to-many class="com.RBR.model.Dimension" />
+        </set>
+        <set name="operateSubject" inverse="true" lazy="false">
+            <key>
+                <column name="OPERATESUBJECTID" precision="8" scale="0" />
+            </key>
+            <one-to-many class="com.RBR.model.Dimension" />
+        </set> -->
+         <!--用来映射关联PO column是Log在该表中的外键列名,增加unique变成“1-1”--> 
+           <many-to-one name="reasoningTree" column="TREEID" unique="true" cascade="all" lazy="false"/> 
+    </class> 
+</hibernate-mapping>

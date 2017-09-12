@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+#items {
+	padding: 0px;
+	margin: 0px;
+}
+
+#items ul {
+	margin: 0px;
+	padding-left: 30px;
+}
+
+#items li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style: none;
+	text-indent: 3em;
+}
+#items h1 {
+	font-size:24px;
+	text-indent: 0em;
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+#items h2 {
+	font-size:20px;
+	text-indent: 2em;
+	padding: 0px;
+	margin: 0px;
+}
+
+#items h3 {
+	font-size:16px;
+	text-indent: 4.5em;
+	padding: 0px;
+	margin: 0px;
+}
+#items h4 {
+	font-size:16px;
+	text-indent: 6em;
+	padding: 0px;
+	margin: 0px;
+}
+#items h5 {
+	font-size:16px;
+	text-indent: 8em;
+	padding: 0px;
+	margin: 0px;
+}
+#items h6 {
+	font-size:16px;
+	text-indent: 10em;
+	padding: 0px;
+	margin: 0px;
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: Microsoft YaHei, SimHei, sans-serif;
+}
+#header {
+    background-color: #ECF0F1;    /*margin-bottom: 15px;*/
+}
+#header .my-title {
+    margin-top: 10px;
+}
+h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.table {
+    margin: 0;
+    font-size: 13px;
+}
+thead {
+    font-weight: bold;
+}
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.table .form-control{
+    height: auto;
+    padding: 3px 10px;
+    font-size: 13px;
+}
+.section h5,.section h4,.section button{
+    display: inline-block;
+}
+
+.uncheck{
+    color: #aaa;
+}
+
+.section button{
+    margin-left: 15px;
+}
+.cancel{
+    width: 78px;
+}
+.ok{
+    width: 80px;
+}
+#containarea{
+    margin-top: 15px;
+}
+.reference{
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+    width: 300px;
+}
+.line{
+    width: 300px;
+    height: 0;
+    border-top: 2px dashed #ccc;
+    margin: 10px 0 20px 0;
+}

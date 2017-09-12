@@ -1,0 +1,191 @@
+@CHARSET "UTF-8";
+/* --------------------基本元素------------------------------ */
+* {
+	font-family: Microsoft YaHei, SimHei, sans-serif;
+}
+h1 {
+	font-weight: normal;
+}
+
+a {
+	color:#3B639F;
+	text-decoration:none;
+}
+a:hover {
+	color:#CD2626;
+	text-decoration:none;
+}
+	
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* --------------------最外层整体------------------------------ */
+#container {
+	width:1200px;
+	margin: 0px auto;
+}
+/* -------------------- 标题栏div------------------------------ */
+#header  {
+	margin: 20px 0px 5px 0px;
+	margin-bottom: 20px;
+}
+#header span {
+	margin-left: 340px;
+	font-size: 16px;
+}
+#header h1 {
+	display:inline;
+	font-size: 20px;
+	margin: 30px 20px 10px 0;
+	float: right; 
+}
+#second_title {
+	font-family: SimHei, sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+#left {
+	border-right: 1px solid #ddd;
+	/* background-color: #ECF0F1; */
+}
+h1 img {
+	margin-right: 24px;
+	width: 36px;
+	vertical-align: middle;
+}
+.clr {
+	clear: both;
+	width: 0px;
+	height: 0px;
+}
+
+#login {
+	float: right;
+}
+.line {
+	margin: 0 4px;
+	padding: 0;
+	width: 1px;
+	border: 1px solid silver;
+	
+	
+}
+#home {
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+.nav-tabs {
+	font-size: medium;
+}
+
+#title2 {
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#words {
+	padding: 5px 10px 5px 10px;
+}
+
+#iframe {
+	padding-top: 20px;
+}
+/* --------------------内容部分------------------------------ */
+#main_div{
+	margin-top:20px;
+	width: 100%;
+	height: auto;
+}
+
+/* ---------------------左侧导航--------------------------- */
+#guide_div {
+	width: 160px;
+	float: left;
+}
+#guide_ul {
+	padding:11px 5px 11px 5px;
+	list-style-type: none;
+	font-weight: normal;
+	border: 1px solid #ddd;
+}
+.eneditable_li {
+	padding:5px 6px 3px 6px;
+	color: #3498db;
+	font-weight:bold;
+	font-size: medium;
+}
+.guide_words_pos {
+	padding: 3px 0px 2px 27px;
+	font-size: small;
+	font-weight: bold;
+}
+
+li img {
+	
+	margin-right: 5px;
+	width: 18px;
+	vertical-align: middle;
+
+}
+
+/* ----------------------右侧详细内容---------------------------- */
+#content_div {
+	width:1000px;
+	height:auto;
+	float: left;
+	margin-left:15px;
+	padding-left:15px;
+	border-left: 1px solid silver; 
+}
+#tabDiv {
+	width: 1000px;
+	height: 30px;
+	border-bottom: 1px solid silver;
+	padding-left: 30px;
+	display: none; 
+}
+.blankOn {
+	width:150px;
+	height: 4px;
+	background-color: white;
+}
+.blankOff {
+	width:150px;
+	height: 4px;
+	
+}
+.tabContentOff {
+	width:150px;
+	float:left;
+	line-height: 28px;	
+	text-align:center;
+	font-family: Microsoft YaHei, SimHei , sans-serif;
+	color: #3B639F;
+	/* border: 1px solid gray; */
+}
+.tabContentOn {
+	width:150px;
+	float:left;
+	line-height: 28px;	
+	text-align:center;
+	font-family: Microsoft YaHei, SimHei , sans-serif;
+	border: 1px solid silver;
+	border-radius:5px;
+	border-bottom: none;
+	color: black;
+	/* border: 1px solid gray; */
+}
+/* ----------------------footer---------------------------- */
+#footer {
+	width:100%;
+	height:30px;
+	background-color: #ecf0f1;
+	margin-top: 6px;
+	text-align:center;
+	font-size:15px;
+	line-height:30px;
+	font-family: Microsoft YaHei, SimHei , sans-serif;
+}

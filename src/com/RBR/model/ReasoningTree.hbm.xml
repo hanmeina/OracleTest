@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.ReasoningTree" table="RBR_REASONINGTREE" schema="SCOTT">
+		
+		<id name="treeId" type="java.lang.Integer" column="TREEID">
+            <generator class="native"/>
+        </id>
+		 <property name="treeData" type="java.lang.String">
+            <column name="TREEDATA" length="4000" />
+        </property>
+        
+        <property name="usedRules" type="java.lang.String">
+            <column name="USED_RULES" length="255" />
+        </property>
+
+    </class>
+    
+</hibernate-mapping>

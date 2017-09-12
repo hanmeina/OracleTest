@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.Dimension" table="DIMENSION" schema="SCOTT">
+		
+		<id name="dimensionId" type="java.lang.String" column="DIMENSIONID">
+            <generator class="native"/>
+        </id>
+       <!--  <many-to-one name="log" class="com.RBR.model.Log" column="LOG_DIMENSION_ID" lazy="false"></many-to-one>-->
+		 <property name="name" type="java.lang.String">
+            <column name="NAME" length="100" />
+        </property> 
+        
+        <property name="type" type="java.lang.String">
+            <column name="TYPE" length="100" />
+        </property>
+	<!-- 	<set name="logOne" inverse="true" lazy="false">
+            <key>
+                <column name="LOGID"/>
+            </key>
+            <one-to-many class="com.RBR.model.Log" />
+        </set>
+		<set name="logTwo" inverse="true" lazy="false">
+            <key>
+                <column name="LOGID"/>
+            </key>
+            <one-to-many class="com.RBR.model.Log" />
+        </set>
+		<set name="logThree" inverse="true" lazy="false">
+            <key>
+                <column name="LOGID"/>
+            </key>
+            <one-to-many class="com.RBR.model.Log" />
+        </set> -->
+    </class>
+    
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.Rules" table="rbr_rules" schema="SCOTT">
+		<id name="id" type="int" column="rid">
+                <generator class="sequence"><param name="sequence">insert_rules_sequence</param></generator>
+        </id>
+		<property name="reliability" type="java.lang.Integer">
+			<column name="rreliablity" length="4" not-null="true"/>
+		</property>
+		<property name="userName" type="java.lang.String">
+			<column  name="user_name" length="255" not-null="true"/>
+		</property>
+		<property name="submitTime" type="java.util.Date">
+			<column name="submit_time" length="20" not-null="true"/>
+		</property>
+		<property name="managerName" type="java.lang.String">
+			<column name="manager_name" length="50"/>
+		</property>
+		<property name="passTime" type="java.util.Date">
+			<column name="pass_time" length="20"/>
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="rstate" length="4" not-null="true"/>
+		</property>
+		<property name="info" type="java.lang.String">
+			<column name="rcomment" length="255"/>
+		</property>
+		<property name="sort" type="java.lang.Integer">
+			<column name="SORT" length="10" not-null="true"/>
+		</property>
+		<set name="conditionSet" inverse="true" cascade="save-update,delete" lazy="false">
+			<key column="rules_id"></key>
+			<one-to-many class="com.RBR.model.Condition"/>
+		</set>
+		<set name="conclusionSet" inverse="true" cascade="save-update,delete" lazy="false">
+			<key column="rules_id"></key>
+			<one-to-many class="com.RBR.model.Conclusion"/>
+		</set>
+	<!-- 	<property name="useFrequency" type="java.lang.Integer">
+			<column name="USEFREQUENCY" length="100" not-null="true"/>
+		</property> -->
+		
+		
+    </class>
+    
+</hibernate-mapping>

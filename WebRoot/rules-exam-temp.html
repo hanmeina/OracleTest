@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>规则审核</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/rules-exam.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="header" class="col-xs-12">
+                    <h3 class="my-title">
+                    <span class="glyphicon glyphicon-list-alt text-primary"></span> 规则审核
+                    </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h4>共有<strong>2</strong>条规则待审核。</h4>
+                </div>
+            </div>
+            <div class="row rule-block">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h5><strong>待审核规则1：</strong></h5>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <td>规则id</td>
+                                        <td>规则前件（可信度）（权重）</td>
+                                        <td>规则后件（可信度）</td>
+                                        <td>规则可信度</td>
+                                        <td>创建者</td>
+                                        <td>创建时间</td>
+                                        <td>审核员</td>
+                                        <td>审核时间</td>
+                                        <td>审核状态</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            总在同一位置（100）（100）<br>
+                                            区域（100）（100）<br>
+                                            纵裂纹（100）（100）<br>
+                                            较深裂纹（100）（100）<br>
+                                        </td>
+                                        <td>
+                                            结晶器在液面处受损（100）
+                                        </td>
+                                        <td>100</td>
+                                        <td>userName</td>
+                                        <td>2015-05-13</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>待审核</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有等价或条件包含规则：是</h5>
+                            <button class="btn btn-default btn-xs"
+                            type="button" data-toggle="collapse"
+                            data-target="#equal-rules" aria-expanded="false"
+                            aria-controls="equal-rules">查看详情 ▼</button>
+                            <div class="collapse" id="equal-rules">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>规则id</td>
+                                            <td>规则前件（可信度）（权重）</td>
+                                            <td>规则后件（可信度）</td>
+                                            <td>规则可信度</td>
+                                            <td>创建者</td>
+                                            <td>创建时间</td>
+                                            <td>审核员</td>
+                                            <td>审核时间</td>
+                                            <td>审核状态</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                总在同一位置（100）（100）<br>
+                                                区域（100）（100）<br>
+                                                纵裂纹（100）（100）<br>
+                                                较深裂纹（100）（100）<br>
+                                            </td>
+                                            <td>
+                                                结晶器在液面处受损（100）
+                                            </td>
+                                            <td>100</td>
+                                            <td>userName</td>
+                                            <td>2015-05-13</td>
+                                            <td>aaa</td>
+                                            <td>2015-05-13</td>
+                                            <td>通过</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有前件相同规则：是</h5>
+                            <button class="btn btn-default btn-xs"
+                            type="button" data-toggle="collapse"
+                            data-target="#left-equal-rules" aria-expanded="false"
+                            aria-controls="left-equal-rules">查看详情 ▼</button>
+                            <div class="collapse" id="left-equal-rules">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>规则id</td>
+                                            <td>规则前件（可信度）（权重）</td>
+                                            <td>规则后件（可信度）</td>
+                                            <td>规则可信度</td>
+                                            <td>创建者</td>
+                                            <td>创建时间</td>
+                                            <td>审核员</td>
+                                            <td>审核时间</td>
+                                            <td>审核状态</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                总在同一位置（100）（100）<br>
+                                                区域（100）（100）<br>
+                                                纵裂纹（100）（100）<br>
+                                                较深裂纹（100）（100）<br>
+                                            </td>
+                                            <td>
+                                                结晶器在液面处受损（100）
+                                            </td>
+                                            <td>100</td>
+                                            <td>userName</td>
+                                            <td>2015-05-13</td>
+                                            <td>aaa</td>
+                                            <td>2015-05-13</td>
+                                            <td>通过</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有后件相同规则：否</h5>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h4><span class="glyphicon glyphicon-question-sign text-danger"></span> 是否通过审核：</h4>
+                            <button class="btn btn-default btn-sm cancel">不通过</button>
+                            <button class="btn btn-primary btn-sm ok">通过</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row rule-block">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h5><strong>待审核规则2：</strong></h5>
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <td>规则id</td>
+                                        <td>规则前件（可信度）（权重）</td>
+                                        <td>规则后件（可信度）</td>
+                                        <td>规则可信度</td>
+                                        <td>创建者</td>
+                                        <td>创建时间</td>
+                                        <td>审核员</td>
+                                        <td>审核时间</td>
+                                        <td>审核状态</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            总在同一位置（100）（100）<br>
+                                            区域（100）（100）<br>
+                                            纵裂纹（100）（100）<br>
+                                            较深裂纹（100）（100）<br>
+                                        </td>
+                                        <td>
+                                            结晶器在液面处受损（100）
+                                        </td>
+                                        <td>100</td>
+                                        <td>userName</td>
+                                        <td>2015-05-13</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>待审核</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有等价或条件包含规则：否</h5>
+                            
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有前件相同规则：是</h5>
+                            <button class="btn btn-default btn-xs"
+                            type="button" data-toggle="collapse"
+                            data-target="#left-equal-rules2" aria-expanded="false"
+                            aria-controls="left-equal-rules2">查看详情 ▼</button>
+                            <div class="collapse" id="left-equal-rules2">
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>规则id</td>
+                                            <td>规则前件（可信度）（权重）</td>
+                                            <td>规则后件（可信度）</td>
+                                            <td>规则可信度</td>
+                                            <td>创建者</td>
+                                            <td>创建时间</td>
+                                            <td>审核员</td>
+                                            <td>审核时间</td>
+                                            <td>审核状态</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                总在同一位置（100）（100）<br>
+                                                区域（100）（100）<br>
+                                                纵裂纹（100）（100）<br>
+                                                较深裂纹（100）（100）<br>
+                                            </td>
+                                            <td>
+                                                结晶器在液面处受损（100）
+                                            </td>
+                                            <td>100</td>
+                                            <td>userName</td>
+                                            <td>2015-05-13</td>
+                                            <td>aaa</td>
+                                            <td>2015-05-13</td>
+                                            <td>通过</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有后件相同规则：否</h5>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h5><span class="glyphicon glyphicon-info-sign text-primary"></span> 是否有传递性冗余：是</h5>
+                             <button class="btn btn-default btn-xs"
+                            type="button" data-toggle="collapse"
+                            data-target="#parse-equal-rules2" aria-expanded="false"
+                            aria-controls="parse-equal-rules2">查看详情 ▼</button>
+                            <div class="collapse" id="parse-equal-rules2">
+                                <h5>相关推理链为：</h5>
+                                <div>
+                                    <h1>这里是一张推理链的图！</h1>
+                                </div>
+                                <h5>相关规则为：</h5>
+                                <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td>规则id</td>
+                                            <td>规则前件（可信度）（权重）</td>
+                                            <td>规则后件（可信度）</td>
+                                            <td>规则可信度</td>
+                                            <td>创建者</td>
+                                            <td>创建时间</td>
+                                            <td>审核员</td>
+                                            <td>审核时间</td>
+                                            <td>审核状态</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                总在同一位置（100）（100）<br>
+                                                区域（100）（100）<br>
+                                                纵裂纹（100）（100）<br>
+                                                较深裂纹（100）（100）<br>
+                                            </td>
+                                            <td>
+                                                结晶器在液面处受损（100）
+                                            </td>
+                                            <td>100</td>
+                                            <td>userName</td>
+                                            <td>2015-05-13</td>
+                                            <td>aaa</td>
+                                            <td>2015-05-13</td>
+                                            <td>通过</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row section">
+                        <div class="col-xs-12">
+                            <h4><span class="glyphicon glyphicon-question-sign text-danger"></span> 是否通过审核：</h4>
+                            <button class="btn btn-default btn-sm cancel">不通过</button>
+                            <button class="btn btn-primary btn-sm ok">通过</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

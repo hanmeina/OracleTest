@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.MetaData" table="rbr_metaData" schema="SCOTT">
+		<id name="id" column="mid">
+             <generator class="sequence"><param name="sequence">insert_metadatas_sequence</param></generator>
+        </id>
+		<property name="pid" type="java.lang.Integer">
+			<column name="pid" not-null="true"/>
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="uname" not-null="true"/>
+		</property>
+		<property name="level" type="java.lang.Integer">
+			<column name="mlevel" length="4" not-null="true"/>
+		</property>
+		<property name="leaf" type="boolean">
+			<column name="mleaf" not-null="true"/>
+		</property>
+		<property name="reliability" type="java.lang.Integer">
+			<column name="mreliability" length="4" not-null="true"/>
+		</property>
+		<property name="managerName" type="java.lang.String">
+			<column name="manager_name" not-null="true"/>
+		</property>
+		<property name="passTime" type="java.util.Date">
+			<column name="pass_time" not-null="true"/>
+		</property>
+		<property name="inverseid" type="java.lang.Integer">
+			<column name="inverseid" not-null="true"/>
+		</property>
+		<set name="conditionSet" inverse="true" lazy="false">
+			<key column="condition_metadata_id"></key>
+			<one-to-many class="com.RBR.model.Condition"/>
+		</set>
+		<set name="conclusionSet" inverse="true" lazy="false">
+			<key column="conclusion_metadata_id"></key>
+			<one-to-many class="com.RBR.model.Conclusion"/>
+		</set>
+    </class>
+    
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.RBR.model.Conclusion" table="rbr_rules_conclusion" schema="SCOTT">
+		 <id name="id" type="int" column="ccid">
+               <generator class="sequence"><param name="sequence">INSERT_CONCLUSION_SEQUENCE</param></generator>
+        </id>
+        <many-to-one name="metaData" class="com.RBR.model.MetaData" column="conclusion_metadata_id" lazy="false"></many-to-one>
+		
+        <many-to-one name="rules" class="com.RBR.model.Rules" column="rules_id" cascade="save-update" not-null="true" lazy="false"></many-to-one>
+    
+    </class>
+    
+</hibernate-mapping>
